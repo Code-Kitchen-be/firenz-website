@@ -46,7 +46,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 nav .logo img {
@@ -88,7 +88,7 @@ nav li:nth-of-type(5) a:hover {
 nav ul {
   list-style: none;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 main {
