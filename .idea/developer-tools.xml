@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DeveloperToolsToolWindowSettingsV1" lastSelectedContentNodeId="color-picker">
+    <developerToolsConfigurations>
+      <developerToolConfiguration developerToolId="color-picker" id="feb50224-2b1d-46b3-91f1-00d30cadf1e0" name="Workbench">
+        <properties>
+          <property key="selectedColor" type="INPUT" value="com.intellij.ui.JBColor|-6696707" />
+        </properties>
+      </developerToolConfiguration>
+    </developerToolsConfigurations>
+  </component>
+</project>
