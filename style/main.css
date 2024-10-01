@@ -131,7 +131,7 @@ section:nth-of-type(6) {
 }
 
 .hero {
-  background-image: url("/assets/hero.jpg");
+  background-image: url("../assets/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 600px;
