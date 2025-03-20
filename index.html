@@ -1,39 +1,36 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Firenz: Specialist in EPC-certificaten en energieadvies in Vlaanderen. Ontdek onze diensten voor energieprestatie-analyses en renovatieadvies.">
-  <meta name="keywords" content="EPC, EPC certificaat, energieprestatiecertificaat, energiedeskundige, renovatieverplichting, energieadvies, Vlaanderen">
-  <meta name="author" content="Firenz">
-
-  <!-- Open Graph tags for social media -->
-  <meta property="og:title" content="Firenz - EPC-certificaten en energieadvies in Vlaanderen">
-  <meta property="og:description" content="Specialist in het opmaken van Energie Prestatie Certificaten (EPC) en energieadvies voor particulieren en bedrijven in Vlaanderen.">
-  <meta property="og:image" content="./assets/logo_small%20-%20vector.svg">
-  <meta property="og:url" content="https://firenz.be">
-  <meta property="og:type" content="website">
-
   <link rel="stylesheet" href="style/main.css">
-  <title>Firenz - EPC-certificaten en energieadvies in Vlaanderen | Renovatieverplichting</title>
+  <title>Firenz - Energieprestatiecertificaten (EPC) en Energieadvies</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
-
-  <!-- Canonical URL to prevent duplicate content issues -->
-  <link rel="canonical" href="https://firenz.be/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script defer data-domain="firenz.be" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
 <header>
-  <nav aria-label="Hoofdnavigatie">
+  <nav>
     <div class="logo">
       <a href="#FIRENZ">
-        <img src="./assets/logo_small%20-%20vector.svg" alt="Firenz logo - EPC-certificaten specialist">
+        <img src="./assets/logo_small%20-%20vector.svg" alt="Firenz logo" loading="lazy">
       </a>
     </div>
-    <ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <ul id="navMenu">
       <li><a href="#FIRENZ">FIRENZ</a></li>
       <li><a href="#EPC">Over EPC</a></li>
       <li><a href="#reno">Renovatieverplichting</a></li>
@@ -46,13 +43,14 @@
 <main>
   <section id="FIRENZ">
     <div class="container">
-      <img src="./assets/epcwaarde.jpg" alt="EPC waarde certificaat voorbeeld" class="firenzImg" />
+      <img src="./assets/epcwaarde.jpg" alt="EPC waarde" class="firenzImg" loading="lazy" />
       <div class="firenzContent">
         <h1>Firenz - Uw EPC Specialist</h1>
         <p>Bij FIRENZ zijn we dé specialist in het opmaken van Energie Prestatie Certificaten (EPC) en
           het bieden van deskundig advies op het gebied van energie-efficiëntie. Met onze
           diepgaande kennis en ervaring helpen we zowel particulieren als bedrijven om inzicht te
-          krijgen in hun energieverbruik en duurzame oplossingen te implementeren. Onze missie is
+          krijgen in hun energieverbruik en duurzame oplossingen te implementeren.</p>
+        <p>Onze missie is
           om een groenere toekomst te creëren door middel van heldere, toegankelijke
           energieprestatie analyses en advies dat aansluit bij uw specifieke behoeften. Samen
           zetten we stappen richting een energiezuiniger en duurzamer leven. Ontdek wat FIRENZ
@@ -63,39 +61,31 @@
   <section id="EPC">
     <div class="container">
       <div class="EPCContent">
-        <h1>Over EPC-certificaten in Vlaanderen</h1>
+        <h1>Over EPC</h1>
         <div class="row">
-          <!--      row 1-->
           <div class="col1">
-            <!--        column 1-->
-            <h2>Wat is een EPC-certificaat?</h2>
+            <h2>Wat is een EPC?</h2>
             <p>Een EPC-attest (energieprestatiecertificaat) is een rapport dat de energetische kwaliteit van een woning
               beoordeelt. Een energiedeskundige (type A) stelt het op en geeft de woning een energiescore, gebaseerd
               op factoren zoals de warmwaterinstallatie en isolatiewaarden van dak, vloer, ramen, muren en deuren. Bij
               verkoop of verhuur is een EPC-attest verplicht, zodat kopers of huurders inzicht krijgen in de energie-
               efficiëntie van de woning.</p>
-            <h2>Wanneer heb ik een EPC-certificaat nodig?</h2>
+            <h2>Wanneer heb ik een EPC nodig?</h2>
             <p>Bij overdracht van een residentiële eigendom via een notariële akte (verkoop), is een EPC Residentieel
               verplicht. Bij verhuur van een residentiële eenheid moet de eigenaar een geldig EPC voorleggen aan de
               kandidaat-huurder, en bij het sluiten van een huurovereenkomst een kopie overhandigen. Bij vestiging
               van opstalrecht of erfpacht is een EPC ook vereist, maar niet bij onteigening via de Vlaamse
               Belastingdienst.</p>
           </div>
-          <!--        column 2-->
-          <img src="./assets/photoshop-house-peb.png" alt="Huis met EPC-certificaat visualisatie" loading="lazy">
+          <img src="./assets/photoshop-house-peb.png" alt="Huis met EPC-certificaat" loading="lazy">
         </div>
         <div>
-          <!--      row 2-->
-          <div>
-            <!--        column 1-->
-            <h2>Hoe lees ik een EPC-attest?</h2>
-            <p>Op EPC's staat sinds 2019 een energielabel, van F (energieverslindend) tot A+ (heel energiezuinig).
-              Naast het energielabel toont het EPC ook de berekende energiescore. Dat is het berekende
-              energieverbruik per jaar en per m² bruikbare vloeroppervlakte (kWh/m² jaar).</p>
-          </div>
+          <h2>Hoe lees ik een EPC attest?</h2>
+          <p>Op EPC's staat sinds 2019 een energielabel, van F (energieverslindend) tot A+ (heel energiezuinig).
+            Naast het energielabel toont het EPC ook de berekende energiescore. Dat is het berekende
+            energieverbruik per jaar en per m² bruikbare vloeroppervlakte (kWh/m² jaar).</p>
         </div>
         <div class="row">
-          <!--      row 3-->
           <p>Het berekend energiegebruik van het EPC-label is een theoretisch
             getal. Het houdt geen rekening met de huidige bewoners en hun
             energiegebruik en is gebaseerd op heel wat aannames.
@@ -103,10 +93,7 @@
             verwarmen tot 18°C) zijn dezelfde voor alle woningen.
             Enkel op die manier kunnen EPC-labels vergeleken worden.
             Het EPC-label omschrijft dus de 'hardware' van de woning, los van de bewoners.</p>
-          <div>
-            <!--        column 2-->
-            <img src="./assets/Picture%201.gif" alt="EPC schaal van F tot A+" loading="lazy">
-          </div>
+          <img src="./assets/Picture%201.gif" alt="EPC schaal energielabels" loading="lazy">
         </div>
       </div>
     </div>
@@ -114,9 +101,9 @@
   <section id="reno">
     <div class="container">
       <div class="renoContent">
-        <h1>Renovatieverplichting voor woningen in Vlaanderen</h1>
+        <h1>Renovatieverplichting</h1>
         <div class="row">
-          <img src="./assets/g5.png" alt="Renovatie van woning met EPC-label E of F" loading="lazy" />
+          <img src="./assets/g5.png" alt="Renovatie verplichting" loading="lazy" />
           <div>
             <p>
               Nieuwe eigenaars van woongebouwen met EPC-label E of F moeten
@@ -124,16 +111,17 @@
               woning renoveren tot minstens label D, bewezen met een nieuw EPC.
               Deze renovatieplicht geldt vanaf de overdracht in volle eigendom en
               ongeacht eventuele toekomstige plannen met de woning. De termijn van
-              vijf jaar begint op de datum van de notariële akte of vestiging. Op de
-              lange termijn moet elke woning tegen 2050 voldoen aan label A, met
+              vijf jaar begint op de datum van de notariële akte of vestiging.
+            </p>
+            <p>
+              Op de lange termijn moet elke woning tegen 2050 voldoen aan label A, met
               tussentijdse doelstellingen (label C in 2028, label B in 2035, enzovoort).
               Vanaf 2030 geldt daarnaast een nieuwe energienorm voor verhuurde
               woningen.
             </p>
             <p>
-              Meer informatie op de site van de Vlaamse overheid:
-              <a href="https://www.vlaanderen.be/een-huis-of-appartement-kopen/renovatieverplichting-voor-residentiele-gebouwen" target="_blank" rel="noopener">
-                Renovatieverplichting voor residentiële gebouwen in Vlaanderen
+              <a href="https://www.vlaanderen.be/een-huis-of-appartement-kopen/renovatieverplichting-voor-residentiele-gebouwen" target="_blank" rel="noopener noreferrer">
+                Meer informatie op de site van de Vlaamse overheid →
               </a>
             </p>
           </div>
@@ -144,23 +132,21 @@
   <section id="how">
     <div class="container">
       <div class="howContent">
-        <h1>Werkwijze bij EPC-certificaat aanvraag</h1>
+        <h1>Werkwijze</h1>
         <p>
           De energiedeskundige inspecteert de gebouwschil (isolatie van dak, muren, vloer, ramen) en technische
-          installaties zoals de
-          verwarmingssystemen. Voor het vaststellen van isolatiediktes zijn bewijzen, zoals facturen of zichtbare
-          isolatie, noodzakelijk; zonder
-          bewijs wordt de EPC-score negatief beïnvloed. De deskundige voert geen destructief onderzoek uit, zoals boren
-          in muren om isolatie
-          te controleren. Voor een goede voorbereiding moeten zowel de deskundige als de eigenaar tijdig het
-          plaatsbezoek
-          voorbereiden. De energiedeskundige informeert de eigenaar over het belang van bewijsstukken voor een
-          nauwkeurige
-          EPC.
+          installaties zoals de verwarmingssystemen. Voor het vaststellen van isolatiediktes zijn bewijzen, zoals facturen of zichtbare
+          isolatie, noodzakelijk; zonder bewijs wordt de EPC-score negatief beïnvloed.
         </p>
-        <video controls aria-label="Video over EPC plaatsbezoek procedure" preload="metadata">
+        <p>
+          De deskundige voert geen destructief onderzoek uit, zoals boren
+          in muren om isolatie te controleren. Voor een goede voorbereiding moeten zowel de deskundige als de eigenaar tijdig het
+          plaatsbezoek voorbereiden. De energiedeskundige informeert de eigenaar over het belang van bewijsstukken voor een
+          nauwkeurige EPC.
+        </p>
+        <video controls preload="none" poster="./assets/video-poster.jpg">
           <source src="./assets/ANIMATIE_EPC_PLAATSBEZOEK_NOT_lmihce.mp4" type="video/mp4" />
-          <track kind="captions" src="captions.vtt" label="Nederlands" />
+          <p>Uw browser ondersteunt geen video afspelen. U kunt <a href="./assets/ANIMATIE_EPC_PLAATSBEZOEK_NOT_lmihce.mp4">de video hier downloaden</a>.</p>
         </video>
       </div>
     </div>
@@ -168,30 +154,30 @@
   <section id="tarif">
     <div class="container">
       <div class="tarifContent">
-        <h1>Tarieven voor EPC-certificaten</h1>
+        <h1>Tarieven</h1>
         <div class="row">
           <div>
-            <img src="./assets/Appartement.png" alt="EPC voor appartement" loading="lazy" />
+            <img src="./assets/Appartement.png" alt="Appartement tarief" loading="lazy" />
             <h2>Appartement</h2>
             <p>€ 180</p>
           </div>
           <div>
-            <img src="./assets/Gesloten%20bebouwing.png" alt="EPC voor gesloten bebouwing" loading="lazy" />
+            <img src="./assets/Gesloten%20bebouwing.png" alt="Gesloten bebouwing tarief" loading="lazy" />
             <h2>Gesloten bebouwing</h2>
             <p>€ 200</p>
           </div>
           <div>
-            <img src="./assets/Halfopen%20bebouwing.png" alt="EPC voor halfopen bebouwing" loading="lazy" />
+            <img src="./assets/Halfopen%20bebouwing.png" alt="Halfopen bebouwing tarief" loading="lazy" />
             <h2>Halfopen bebouwing</h2>
             <p>€ 210</p>
           </div>
           <div>
-            <img src="./assets/Open%20bebouwing.png" alt="EPC voor open bebouwing" loading="lazy" />
+            <img src="./assets/Open%20bebouwing.png" alt="Open bebouwing tarief" loading="lazy" />
             <h2>Open bebouwing</h2>
             <p>€ 220</p>
           </div>
         </div>
-        <p>Voor woningen buiten de boven vermelde specificaties mag u steeds contact opnemen voor een vrijblijvende
+        <p class="note">Voor woningen buiten de boven vermelde specificaties mag u steeds contact opnemen voor een vrijblijvende
           offerte.</p>
       </div>
     </div>
@@ -199,14 +185,14 @@
   <footer id="contact">
     <div class="container">
       <div class="col">
-        <h2>Contact met Firenz</h2>
+        <h2>Contact</h2>
         <div class="contactContent">
-          <img src="./assets/Untitled%20design.png" alt="Lukas - Energiedeskundige bij Firenz" id="lukas" loading="lazy" />
+          <img src="./assets/Untitled%20design.png" alt="Lukas, EPC deskundige" id="lukas" loading="lazy" />
           <div>
-            <img src="./assets/logo_small%20-%20vector.svg" alt="Firenz logo" id="logo" loading="lazy" />
-            <p>Email: <a href="mailto:lukas@firenz.be">lukas@firenz.be</a></p>
-            <p>Erkenningsnummer: EP21229</p>
-            <p>Telefoon: <a href="tel:+32477694028">+32 477 69 40 28</a></p>
+            <img src="./assets/logo_small%20-%20vector.svg" alt="Firenz Logo" id="logo" loading="lazy" />
+            <p><strong>Email:</strong> lukas@firenz.be</p>
+            <p><strong>EP nummer:</strong> EP21229</p>
+            <p><strong>Tel:</strong> +32 477 69 40 28</p>
           </div>
         </div>
       </div>
@@ -223,34 +209,28 @@
       </div>
     </div>
     <div class="container">
-      <p>&copy; 2025 Firenz | <a href="/sitemap.xml">Sitemap</a></p>
+      <p class="copyright">© 2025 FIRENZ. Alle rechten voorbehouden.</p>
     </div>
   </footer>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Firenz",
-      "image": "./assets/logo_small%20-%20vector.svg",
-      "description": "Specialist in het opmaken van Energie Prestatie Certificaten (EPC) en het bieden van deskundig advies op het gebied van energie-efficiëntie in Vlaanderen.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BE"
-      },
-      "telephone": "+32477694028",
-      "email": "lukas@firenz.be",
-      "priceRange": "€€",
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 50.8503,
-          "longitude": 4.3517
-        },
-        "geoRadius": 100
-      }
-    }
-  </script>
 </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('#navMenu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+      });
+    });
+  });
+</script>
 </body>
 </html>
