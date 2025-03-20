@@ -1,244 +1,436 @@
+/* Base styles */
+:root {
+  --primary-color: #6093D4;
+  --secondary-color: #165F82;
+  --text-color: #333;
+  --background-color: #FFF;
+  --section-spacing: 4rem;
+  --container-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background: #FFF;
-  width: 100vw;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--background-color);
+  width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
+/* Typography */
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-top: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Header and navigation */
 header {
-  background: #FFF;
-  color: #333;
+  background: var(--background-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  width: 100%;
-  margin: auto;
-
-  @media screen and (max-width: 950px) {
-    flex-direction: column;
-  }
+  max-width: var(--container-width);
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 nav .logo img {
-  width: 200px;
+  width: 150px;
+  height: auto;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
 
+nav li {
+  display: inline-block;
 }
 
 nav a {
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   font-weight: bold;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
+nav a:hover {
+  background-color: rgba(96, 147, 212, 0.1);
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Main content */
 main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
-  justify-content: center;
-}
-
-h1 {
-  background-color: #6093D4;
-  padding: 8px;
-  max-width: 80%;
-  @media screen and (max-width: 950px) {
-    max-width: 100%;
-  }
+  width: 100%;
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem 0;
+  padding: 3rem 0;
+  width: 100%;
 }
 
 .container {
-  display: flex;
-  max-width: 1000px;
+  max-width: var(--container-width);
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-  @media screen and (max-width: 950px) {
-    flex-direction: column;
-  }
+/* Section: FIRENZ */
+#FIRENZ .container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .firenzImg {
-  width: 30%;
-  @media screen and (max-width: 950px) {
-    width: 100%;
-  }
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .firenzContent {
-  margin: 0 0 0 32px;
-
-  h1 {
-    max-width: unset;
-  }
-
-  @media screen and (max-width: 950px) {
-    margin: 0;
-
-    p {
-      margin: 16px;
-    }
-  }
+  flex: 1;
 }
 
+/* Section: EPC */
 .EPCContent {
-  display: flex;
-  flex-direction: column;
-
-  .row {
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 950px) {
-      ,
-      0
-      ,03
-      flex-direction: column;
-    }
-
-    .col1 {
-      flex: 1 0 70%;
-    }
-
-    img {
-      max-height: 300px;
-    }
-
-    p {
-      padding-right: 32px;
-    }
-  }
+  width: 100%;
 }
 
-.renoContent {
+.row {
   display: flex;
-  flex-direction: column;
-
-  .row {
-    display: flex;
-    align-items: center;
-
-    img {
-      max-height: 300px;
-    }
-
-    p {
-      padding-left: 32px;
-    }
-  }
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
+.col1 {
+  flex: 1;
+}
+
+.row img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section: Renovation */
+.renoContent .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.renoContent img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section: How */
 .howContent {
-  display: flex;
-  flex-direction: column;
-
-  video {
-    width: 100%;
-    max-width: 500px;
-    align-self: center;
-    padding-top: 32px;
-  }
+  width: 100%;
 }
 
+.howContent video {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section: Tariffs */
 .tarifContent {
-  display: flex;
-  flex-direction: column;
-
-  .row {
-    display: flex;
-    align-items: center;
-
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    img {
-      max-height: 300px;
-      max-width: 100%;
-    }
-
-    p {
-      padding-right: 32px;
-    }
-  }
+  width: 100%;
 }
 
-footer {
+.tarifContent .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tarifContent .row > div {
+  flex: 1;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
+.tarifContent .row > div:hover {
+  transform: translateY(-5px);
+}
+
+.tarifContent img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.tarifContent h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.tarifContent p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+footer .col {
+  flex: 1;
+}
+
+footer h2 {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+footer h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 50px;
+  background-color: var(--primary-color);
+}
+
+.contactContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contactContent #lukas {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contactContent div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 0.75rem;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 1.75rem;
   }
 
-  col {
-    display: flex;
+  .row {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
-  .contactContent {
-    display: flex;
-    flex-direction: row;
-
-    div {
-      margin-left: 32px;
-    }
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    li {
-      margin: 16px 0;
-
-      a {
-        color: #333;
-        text-decoration: none;
-      }
-    }
-  }
-
-  #lukas {
-    height: 300px;
-    padding-right: 32px;
-    border-right: 4px solid #165F82;
-  }
-
-  #logo {
-    height: 150px;
+  .tarifContent .row > div {
+    width: calc(50% - 1rem);
   }
 }
 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 0;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #eee;
+  }
+
+  nav a {
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  #FIRENZ .container,
+  .renoContent .row {
+    flex-direction: column;
+  }
+
+  .firenzImg {
+    margin-bottom: 1.5rem;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  .contactContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactContent #lukas {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+    border-right: none;
+  }
+
+  .tarifContent .row > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  .contactContent #lukas {
+    max-width: 120px;
+  }
+}
