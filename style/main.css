@@ -434,3 +434,25 @@ footer a:hover {
     max-width: 120px;
   }
 }
+
+.codekitchen-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.codekitchen-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .codekitchen-credit {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

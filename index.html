@@ -222,7 +222,10 @@
       </div>
     </div>
     <div class="container">
-      <p class="copyright">© 2025 FIRENZ. Alle rechten voorbehouden.</p>
+      <p class="copyright">© <span id="date">2025</span> FIRENZ. Alle rechten voorbehouden.</p>
+      <p class="codekitchen-credit">
+        Proudly cooked up by <a href="https://www.codekitchen.be" target="_blank"><img style="width: 80px;" src="assets/Code%20kitchen%20logo%20-%20no-bg.svg" alt="Code Kitchen Logo"/></a>
+      </p>
     </div>
   </footer>
 </main>
@@ -244,6 +247,10 @@
       });
     });
   });
+
+  // Update the year in the footer
+  const currentYear = new Date().getFullYear();
+  document.getElementById('date').textContent = currentYear;
 </script>
 <script type="application/ld+json">
   {
